@@ -1,7 +1,7 @@
 
 const students=[];
 const studentHouse = ["Gryffindor","Hufflepuff", "Ravenclaw","Slytherin"];
-const randomhouse = studentHouse[Math.floor(Math.random() *studentHouse.length)];
+
 const printToDom = (divId, textToPrint) => {
     const selectedDiv= document.getElementById(divId);
     selectedDiv.innerHTML = textToPrint;
@@ -27,7 +27,7 @@ const sortStudent = (e)=>{
     const student={
         id: Date.now(),  //generate id
         name:document.getElementById("name").value,  //get from input
-        house:document.getElementsByName(randomhouse)  //random sort
+        house: studentHouse[Math.floor(Math.random() *studentHouse.length)]  //random sort
     }
     students.push(student)
     buildStudentCard(students);
