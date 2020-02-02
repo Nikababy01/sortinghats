@@ -14,7 +14,7 @@ const buildStudentCard= (mystudent)=> {
         domString += '<div class="card-body">';
         domString += `<h5 class="card-title" id="name">${mystudent[i].name}</h5>`;
         domString += `<p class="card-text" id="house">${mystudent[i].house}</p>`;
-        domString += `<a href="#" class="btn btn-primary">Expel</a>`;
+        domString += `<button class="btn btn-primary">Expel</button>`;
         domString += '</div>';
         domString += '</div>';
     }
