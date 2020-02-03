@@ -14,7 +14,7 @@ const buildStudentCard= (mystudent)=> {
         domString += '<div class="card-body">';
         domString += `<h5 class="card-title" id="name">${mystudent[i].name}</h5>`;
         domString += `<p class="card-text" id="house">${mystudent[i].house}</p>`;
-        domString += `<button class="btn btn-primary">Expel</button>`;
+        domString += `<button id="remove" class="btn btn-primary">Expel</button>`;
         domString += '</div>';
         domString += '</div>';
     }
@@ -24,14 +24,16 @@ const sortStudent = (e)=>{
     e.preventDefault()
     console.log(e)
     
-    const student={
+    const newStudent={
         id: Date.now(),  //generate id
         name:document.getElementById("name").value,  //get from input
         house: studentHouse[Math.floor(Math.random() *studentHouse.length)]  //random sort
     }
-    students.push(student)
+    students.push(newStudent)
     buildStudentCard(students);
+    document.forms[0].reset();
 }
+
 
     
  

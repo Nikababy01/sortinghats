@@ -12,24 +12,32 @@
 <body>
     
     <div class="jumbotron">
-        <h1 class="display-4">Welcome future Wizards!!!</h1>
-        <p class="lead">“It does not do to dwell on dreams and forget to live.” .</p>
+        <h1 class="display-4">Welcome to HOGGY HOGGY WARTS!</h1>
+        <p class="lead">“The four houses of Hogwarts represent the 4 founders of Hogwarts and their philosophy. It is according to their wishes that certain category of people are sorted into each house. Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw and Salazar Slytherin are the 4 founders and the houses are named after them.” .</p>
         <hr class="my-4">
         <p class="lead">Today your journey begins!</p>
         <p class="lead">
-          <a id= "start" class="btn btn-primary btn-lg" data-toggle= "collapse" href="#sortFormContainer" role="button" aria-expanded="false" aria-controls="sortFormContainer">Let's Get It Started!</a>
+          <a id= "start" class="btn btn-primary btn-lg" data-toggle= "collapse" href="#sortFormContainer" role="button" aria-expanded="false" aria-controls="sortFormContainer">Let's Start Sorting!</a>
         </p>
       </div>
-      <h3 class="display-6">Enter First Year's Student's Name</h3>
+      
       <!-- add a container div toggle-->
         <div class= "collapse" id= "sortFormContainer">
-          <form class="form-inline">
-            <div class="form-group mb-2"></div>
-        <div class="form-group mx-sm-3 mb-2">
-             <label for="studentname" class="sr-only">Student Name</label>
-              <input type="text" class="form-control" id="name" placeholder="ex. Harry Porter">
-        </div>
-            <button id= "sorthouse" type="submit" class="btn btn-primary mb-2">Sort</button>
+          <section class="studentinfo">
+            <h3 class="display-6">Enter First Year's Name</h3>
+            <form class="form-inline">
+              <div class="form-group mb-2">
+                <div>
+                  <p>Student:</p>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                <label for="name" class="sr-only">Student Name</label> 
+                <input type="text" class="form-control" id="name" placeholder="ex. Harry Porter">
+                <div class="btnsort">
+                <button id= "sorthouse" type="submit" class="btn btn-primary mb-2">Sort</button>
+              </div>
+            </section>
+          </div->
           </form>
         </div>
         </div>
