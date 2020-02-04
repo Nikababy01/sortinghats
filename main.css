@@ -1,8 +1,16 @@
 body{
     background-color: white;
-    margin: 2%;
+     margin: 2%;
 }
-#studentHouse{
+.display-4{
+text-align: center;
+}
+.lead{
+    justify-content: left;
+}
+
+#studentH
+ouse{
     display: container;
     flex-wrap: wrap;
     flex-direction: row;
