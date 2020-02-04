@@ -27,6 +27,8 @@ const btnexpel= (id)=> {
     for(let i = 0; i < students.length; i++) {
         if(students[i].id === id) {
             students.splice(i, 1);//defines the parameter
+            document.getElementById("housecards").innerHTML="";
+            buildStudentCard(students);
          }
     }
 console.log(students);
