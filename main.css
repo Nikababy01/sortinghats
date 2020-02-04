@@ -43,3 +43,18 @@ justify-content: center ;
  margin-left: 85px ;
     
 }
+.card-body.Ravenclaw{
+    background-color: aqua;
+   
+}
+.card-body.Gryffindor{
+    background-color:yellow;
+}
+.card-body.Hufflepuff{
+    background-color: pink;
+   
+}
+.card-body.Slytherin{
+    background-color: orange;
+   
+}
