@@ -10,6 +10,7 @@ const printToDom = (divId, textToPrint) => {
 const buildStudentCard= (mystudent)=> {
     let domString = '';
     for(let i = 0; i < mystudent.length; i++){
+    
         domString += '<div id="housecards" class="card" style="width: 18rem;">';
         domString += '<div class="card-body">';
         domString += `<h5 class="card-title" id="name">${mystudent[i].name}</h5>`;
@@ -29,14 +30,14 @@ const sortStudent = (e)=>{
         name:document.getElementById("name").value,  //get from input
         house: studentHouse[Math.floor(Math.random() *studentHouse.length)]  //random sort
     }
-    students.push(newStudent)
-    buildStudentCard(students);
-    document.forms[0].reset();
+        students.push(newStudent)
+        buildStudentCard(students);
+
 }
 
 
-    
- 
+
+
 const events = ()=> {
     document.getElementById('sorthouse').addEventListener('click',sortStudent);
 };
