@@ -1,3 +1,45 @@
 body{
-    background-color: aqua;
+    background-color: white;
+    margin: 2%;
+}
+#studentHouse{
+    display: container;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.form-inline{
+justify-content: center ;
+}
+
+#sorthouse{
+    margin: 30%;
+    min-width: auto;
+}
+
+#housecards{
+   
+    margin: 5px 5px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius:10px 10px 10px 10px ;
+    justify-content: center;
+}
+.studentinfo{
+    border: 2px solid black;
+    padding: 20px 20px 20px 20px;
+}
+#name{
+    text-align: center;
+}
+
+#house{
+    text-align: center;
+    font-weight: bold;
+}
+
+#remove{
+ margin-left: 85px ;
+    
 }
