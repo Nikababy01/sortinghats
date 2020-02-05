@@ -15,7 +15,7 @@ const buildStudentCard= (mystudent)=> {
         domString += `<div class="card-body ${mystudent[i].house}">`;
         domString += `<h5 class="card-title" id="name">${mystudent[i].name}</h5>`;
         domString += `<p class="card-text" id="house">${mystudent[i].house}</p>`;
-        domString += `<button id="remove"  onclick= "btnexpel(${mystudent[i].id})" class="btn btn-primary">Expel</button>`;
+        domString += `<button id="remove" onclick= "btnexpel(${mystudent[i].id})" class="btn btn-primary">Expel</button>`;
         domString += '</div>';
         domString += '</div>';
     }
@@ -52,6 +52,8 @@ const sortStudent = (e)=>{
     }
         students.push(newStudent)
         buildStudentCard(students);
+        document.getElementById("name").value="";
+        
 
 }
 
@@ -66,6 +68,8 @@ const events = ()=> {
 
  const init =()=> {
     events();
+    
+    
   }
  init();
 
