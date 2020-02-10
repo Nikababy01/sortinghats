@@ -46,9 +46,7 @@ cnt= cnt + 1;
 
 const sortStudent = (e)=>{
     e.preventDefault()
-    
-    // before newStudent only pertains to this object
-    const newStudent={
+        const newStudent={
         id: uniqueId(),  //generate id
         name:document.getElementById("name").value,  //get from input
         house: studentHouse[Math.floor(Math.random() *studentHouse.length)]  //random sort
